@@ -1,1 +1,0 @@
-# sinistra-italiana-genova-site
