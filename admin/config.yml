@@ -1,0 +1,38 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/img"
+public_folder: "/img"
+
+collections:
+  - name: "eventi"
+    label: "Eventi"
+    folder: "content/eventi"
+    create: true
+    fields:
+      - { label: "Titolo", name: "title", widget: "string" }
+      - { label: "Data", name: "date", widget: "datetime" }
+      - { label: "Orario", name: "orario", widget: "string" }
+      - { label: "Luogo", name: "luogo", widget: "string" }
+      - { label: "Descrizione", name: "body", widget: "markdown" }
+      - { label: "Immagine", name: "image", widget: "image" }
+
+  - name: "news"
+    label: "News"
+    folder: "content/news"
+    create: true
+    fields:
+      - { label: "Titolo", name: "title", widget: "string" }
+      - { label: "Data", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Immagine", name: "image", widget: "image" }
+
+  - name: "eletti-assessori"
+    label: "Eletti e Assessori"
+    folder: "content/eletti-assessori"
+    create: true
+    fields:
+      - { label: "Nome", name: "title", widget: "string" }
+      - { label: "Ruolo", name: "ruolo", widget: "string" }
+      - { label: "Foto", name: "image", widget: "image" }
